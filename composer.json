@@ -1,0 +1,16 @@
+{
+    "name": "rabbitinternet/cs-fixer",
+    "description": "php-cs-fixer with github hook and config",
+    "authors": [
+        {
+            "name": "Aleksandar Markicevic",
+            "email": "aleksandarm@rabbit.co.th"
+        }
+    ],
+    "require": {
+        "friendsofphp/php-cs-fixer": "^2.3.2"
+    },
+    "scripts": {
+        "post-install-cmd": "src/init-hook"
+    }
+}
