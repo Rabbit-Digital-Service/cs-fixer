@@ -1,0 +1,32 @@
+#!/bin/bash
+
+CMD=vendor/bin/php-cs-fixer
+CONFIG=vendor/rabbitinternet/cs-fixer/src/.php_cs
+
+function show_help() {
+    echo -e "\n Usage: cs-fixer <command> \n\n Available commands: \n
+        cs                   - run php-cs-fixer in dry-run mode \n
+        cs-fix               - run php-cs-fixer and fix the issues \n
+        cs-stop-on-violation - run php-cs-fixer in dry-run mode and stop on fist violation \n
+        help                 - print this help \n"
+}
+
+if [ $1 == "cs" ]; then
+    $CMD fix -v --config $CONFIG --dry-run
+
+    exit
+elif [ $1 == "cs-fix" ]; then
+    $CMD fix -v --config $CONFIG
+
+    exit
+elif [ $1 == "cs-stop-on-violation" ]; then
+    $CMD fix -v --config $CONFIG --dry-run --stop-on-violation
+
+    exit
+elif [ $1 == "help" ]; then
+    show_help
+
+    exit
+fi
+
+show_help

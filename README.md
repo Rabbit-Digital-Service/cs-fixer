@@ -10,7 +10,7 @@ Default set of rules that are fully extendable
 
 #### Require a package
 ```
-composer require --dev rabbitinternet/cs-fixer v1.0.0
+composer require --dev rabbitinternet/cs-fixer
 ```
 
 #### Add composer commands
@@ -18,31 +18,23 @@ composer require --dev rabbitinternet/cs-fixer v1.0.0
 "scripts": {
     "post-install-cmd": [
         "composer run-script post-install-cmd -d ./vendor/rabbitinternet/cs-fixer"
-    ],
-    "cs": "vendor/bin/php-cs-fixer fix -v --config vendor/rabbitinternet/cs-fixer/src/.php_cs --dry-run",
-    "cs-fix": "vendor/bin/php-cs-fixer fix -v --config vendor/rabbitinternet/cs-fixer/src/.php_cs"
+    ]
 }
 ```
 
-**Note: sometimes (sylius project for example), composer installs the binaries in bin/ instead of vendor/bin/**
-
-
-#### Install the it hook
+#### Install the git hook
 ```
 composer run-script post-install-cmd
 ```
 
 ## Manual Usage
 
-#### dry run
 ```
-composer run-script cs
+vendor/bin/cs-fixer help
 ```
 
-#### fix the issues
-```
-composer run-script cs-fix
-```
+**Note: Composer can install the binaries in custom dir instead of vendor/bin/ (sylius installs in bin/)**
+
 
 ## Rules configuration
 
