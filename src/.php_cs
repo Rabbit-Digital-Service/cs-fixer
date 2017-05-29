@@ -17,6 +17,7 @@ $finder = PhpCsFixer\Finder::create()
     ->exclude('public')
     ->exclude('storage')
     ->exclude('node_modules')
+    ->exclude('var')
     ->in(getcwd());
 
 return PhpCsFixer\Config::create()
