@@ -19,8 +19,8 @@ composer require --dev rabbitinternet/cs-fixer v1.0.0
     "post-install-cmd": [
         "composer run-script post-install-cmd -d ./vendor/rabbitinternet/cs-fixer"
     ],
-    "cs": "vendor/bin/php-cs-fixer fix . -v --config vendor/rabbitinternet/cs-fixer/src/.php_cs --dry-run",
-    "cs-fix": "vendor/bin/php-cs-fixer fix . -v --config vendor/rabbitinternet/cs-fixer/src/.php_cs"
+    "cs": "vendor/bin/php-cs-fixer fix -v --config vendor/rabbitinternet/cs-fixer/src/.php_cs --dry-run",
+    "cs-fix": "vendor/bin/php-cs-fixer fix -v --config vendor/rabbitinternet/cs-fixer/src/.php_cs"
 }
 ```
 
