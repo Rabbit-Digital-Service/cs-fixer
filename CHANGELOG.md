@@ -1,6 +1,11 @@
 CHANGELOG
 ==========================
 
+Changelog for v1.1.1
+--------------------
+
+* fixed cs-fixer script, try to find php-cs-fixer in both bin/ and vendor/bin dirs
+
 Changelog for v1.1
 --------------------
 
