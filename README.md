@@ -13,18 +13,16 @@ Default set of rules that are fully extendable
 composer require --dev rabbitinternet/cs-fixer
 ```
 
-#### Add composer commands
+#### Add composer init-hook command
 ```
 "scripts": {
-    "post-install-cmd": [
-        "composer run-script post-install-cmd -d ./vendor/rabbitinternet/cs-fixer"
-    ]
+    "init-hook": "composer run-script post-install-cmd -d ./vendor/rabbitinternet/cs-fixer"
 }
 ```
 
 #### Install the git hook
 ```
-composer run-script post-install-cmd
+composer run-script init-hook
 ```
 
 ## Manual Usage
