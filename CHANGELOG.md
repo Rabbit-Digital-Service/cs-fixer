@@ -1,23 +1,23 @@
-CHANGELOG
+# CHANGELOG
 ==========================
 
-Changelog for v1.1.2
+### Changelog for v1.1.2
 --------------------
 
 * handle the erorr if the git pre-commit script is not initialized
 
-Changelog for v1.1.1
+### Changelog for v1.1.1
 --------------------
 
 * fixed cs-fixer script, try to find php-cs-fixer in both bin/ and vendor/bin dirs
 
-Changelog for v1.1
+### Changelog for v1.1
 --------------------
 
 * added cs-fixer exec file that provides api for all available commands (the file is copied in composer bin dir)
 * added var dir in exclude list
 
-Changelog for v1.0
+### Changelog for v1.0
 ------------------
 
-First release
+* First release

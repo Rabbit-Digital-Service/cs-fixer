@@ -49,3 +49,5 @@ return [
 ];
 
 ```
+
+### [Changelog](CHANGELOG.md)
