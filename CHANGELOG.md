@@ -1,6 +1,11 @@
 CHANGELOG
 ==========================
 
+Changelog for v1.1.2
+--------------------
+
+* handle the erorr if the git pre-commit script is not initialized
+
 Changelog for v1.1.1
 --------------------
 
