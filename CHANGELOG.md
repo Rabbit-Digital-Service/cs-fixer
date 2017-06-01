@@ -1,5 +1,10 @@
 # CHANGELOG
-==========================
+
+### Changelog for v1.2.0
+--------------------
+
+* fix small bug in pre-commit script
+* make it possible to override finder rules
 
 ### Changelog for v1.1.2
 --------------------
