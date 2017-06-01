@@ -20,7 +20,7 @@ for FILE in `git diff-index --cached --name-only --diff-filter=AM HEAD`; do
     fi
 done
 
-if [ ! -z $FILES ]; then
+if [ ! -z "$FILES" ]; then
     $CMD fix $FILES -v --config vendor/rabbitinternet/cs-fixer/src/.php_cs --dry-run
 fi
 

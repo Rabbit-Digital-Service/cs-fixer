@@ -42,9 +42,17 @@ To override default rules add `.php_cs_rules.php` file in the root of the projec
 <?php
 
 return [
-    // override rules
-    'single_blank_line_at_eof' => true
-];
+    'finder' => [
+        'exclude' => [
+            'var'
+        ],
+        'notName' => [
+           'autoload.php',
+        ],
+    'fixer' => [
+        'single_blank_line_at_eof' => true
+    ]
+]
 
 ```
 
