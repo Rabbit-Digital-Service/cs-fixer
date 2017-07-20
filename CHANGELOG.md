@@ -1,5 +1,11 @@
 # CHANGELOG
 
+### Changelog for v1.3
+--------------------
+
+* add cs-diff command,, which will run cs fixer in dry mode with --diff flag
+* get rid of the warnings when cs-fixer without an argument is called
+
 ### Changelog for v1.2.0
 --------------------
 
