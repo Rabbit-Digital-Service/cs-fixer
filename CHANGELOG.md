@@ -1,5 +1,10 @@
 # CHANGELOG
 
+### Changelog for v1.3.1
+--------------------
+
+* fixed bug, update the path of cache file to /tmp/ where can be created from host
+
 ### Changelog for v1.3
 --------------------
 
