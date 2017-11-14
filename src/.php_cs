@@ -29,6 +29,6 @@ foreach ($finderRules as $name => $values) {
 
 return PhpCsFixer\Config::create()
     ->setUsingCache(true)
-    ->setCacheFile(__DIR__ . '/.php_cs.cache')
+    ->setCacheFile('/tmp/.php_cs.cache')
     ->setRules($fixerRules)
     ->setFinder($finder);
