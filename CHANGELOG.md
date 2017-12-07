@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### Changelog for v1.4.1
+--------------------
+* fix composer.json to require cs-fixer supporting `yoda_style` config
+
 ### Changelog for v1.4
 --------------------
 * yoda style, enforce removed
