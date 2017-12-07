@@ -36,6 +36,7 @@ return [
         'return_type_declaration' => [
                 'space_before' => 'one'
             ],
-        'php_unit_fqcn_annotation' => false
+        'php_unit_fqcn_annotation' => false,
+        'yoda_style' => false
     ]
 ];

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### Changelog for v1.4
+--------------------
+* yoda style, enforce removed
+
 ### Changelog for v1.3.1
 --------------------
 
